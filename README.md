@@ -1,2 +1,2 @@
 # MobilProgramlamaOdevi
-Odev
+Vücut Kitle İndeksini Hesaplayan Program
