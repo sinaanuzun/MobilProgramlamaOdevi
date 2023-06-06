@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kilo (kg)"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/weightLabel"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weightEditText"
+        android:layout_below="@id/weightLabel"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boy (cm)"
+        android:layout_marginTop="16dp"
+        android:id="@+id/heightLabel"
+        android:textSize="18sp"
+        android:layout_below="@id/weightEditText"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heightEditText"
+        android:layout_below="@id/heightLabel"
+        android:inputType="numberDecimal"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculateButton"
+        android:text="Hesapla"
+        android:layout_below="@id/heightEditText"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sonuç:"
+        android:layout_marginTop="16dp"
+        android:id="@+id/resultLabel"
+        android:textSize="18sp"
+        android:layout_below="@id/calculateButton"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultTextView"
+        android:textSize="24sp"
+        android:layout_below="@id/resultLabel"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori:"
+        android:layout_marginTop="16dp"
+        android:id="@+id/categoryLabel"
+        android:textSize="18sp"
+        android:layout_below="@id/resultTextView"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/categoryTextView"
+        android:textSize="24sp"
+        android:layout_below="@id/categoryLabel"
+        />
+
+</RelativeLayout>
